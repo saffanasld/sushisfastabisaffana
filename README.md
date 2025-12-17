@@ -1,16 +1,58 @@
-# React + Vite
+# 🍣 SushiFast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Présentation du projet
+Le projet SushiFast consiste à développer une application web en React permettant à un restaurant de sushis de présenter l’ensemble de ses menus à ses clients.  
+L’application affiche les menus proposés, leurs caractéristiques ainsi que des informations détaillées.  
+Les données utilisées sont fournies via un fichier JSON (boxes.json) mis à disposition sur e-learning.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objectifs pédagogiques
+- Manipuler React avec Vite  
+- Exploiter des données issues d’un fichier JSON  
+- Mettre en place un routage avec React Router  
+- Structurer une application en composants  
+- Utiliser un framework CSS (Bootstrap)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧭 Pages implémentées
+L’application est composée de 6 onglets/pages.
 
-## Expanding the ESLint configuration
+### 1. Accueil
+C’est l’affichage de tous les menus. Les informations visibles sont :  
+- Nom du menu  
+- Nombre de pièces d’un menu  
+- Image du menu  
+- Prix du menu  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Lorsqu’on clic sur un menu l’on est redirigé vers une page de détail afin de consulter les aliments qui le composent.
+
+### 2. Nos saveurs
+C’est la présentation des saveurs associées à chaque menu.
+
+### 3. Avocat ou coriandre
+C’est la liste des menus contenant comme saveurs :  
+- Avocat  
+- ou  
+- Coriandre  
+
+### 4. California Saumon Avocat
+C’est la liste des menus contenant l’aliment **"California Saumon Avocat"**.
+
+### 5. Menu pièces inf à 13
+C’est le calcul du prix total et l’affichage des menus ayant moins de 13 pièces.
+
+### 6. Menu cher ou non
+C’est là qu’on retrouve le menu le plus cher, et le menu le moins cher.
+
+---
+
+## 💻 Lien hébergé du site
+sushisfastabisaffana.vercel.app
+
+---
+
+## 👩‍💻 Auteurs
+Abi VIGNESWARAN & Saffana SALAOUDINE  
+Projet réalisé dans le cadre du TP noté React – R504
